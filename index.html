@@ -1,0 +1,1674 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ElectricMatch</title>
+    <!-- Bootstrap cdn -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65"
+      crossorigin="anonymous"
+    />
+    <!-- Bootstrap icon cdn -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css"
+    />
+    <!-- Swiper js -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"
+    />
+    <!-- Google fonts cdn -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- custom style -->
+    <link rel="stylesheet" href="assets/style.css" />
+  </head>
+  <body>
+    <!-- nav bar -->
+    <nav
+      class="navbar navbar-expand-lg bg-white px-lg-3 py-lg-2 shadow-sm sticky-top"
+    >
+      <div class="container-fluid">
+        <a class="navbar-brand me-5 fw-bold" href="index.html">ElectricMatch</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="index.html"
+                >Home</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#aboutus">About Us</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="electrician.html">Electrician</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="services.html">Services</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="shop.html">Shop</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#testimonials">Testimonials</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#faq">FAQ</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="blog.html">Blog</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#contactus">Contact Us</a>
+            </li>
+          </ul>
+          <div class="d-flex" role="search">
+            <!-- Button trigger modal -->
+            <button
+              type="button"
+              class="btn btn-outline-dark shadow-none me-lg-3 me-2"
+              data-bs-toggle="modal"
+              data-bs-target="#cart-modal"
+            >
+              Cart
+            </button>
+            <button
+              type="button"
+              class="btn btn-outline-dark shadow-none me-lg-3 me-2"
+              data-bs-toggle="modal"
+              data-bs-target="#login-modal"
+            >
+              Login
+            </button>
+            <button
+              type="button"
+              class="btn btn-outline-dark shadow-none me-lg-2 me-3"
+              data-bs-toggle="modal"
+              data-bs-target="#register-modal"
+            >
+              Register
+            </button>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Modal  cart start -->
+    <div
+      class="modal fade"
+      id="cart-modal"
+      tabindex="-1"
+      aria-labelledby="exampleModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h1
+              class="modal-title fs-5 d-flex align-items-center"
+              id="exampleModalLabel"
+            >
+              Shopping Cart <span class="text-warning"> (2 Items)</span>
+            </h1>
+            <button
+              type="reset"
+              class="btn-close shadow-none"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body container">
+            <div class="row">
+              <div class="col-6">Product Details</div>
+              <div class="col-2">Quantaty</div>
+              <div class="col-2">Price</div>
+              <div class="col-2">Total</div>
+            </div>
+            <hr />
+            <div class="row">
+              <div class="col-6">Flood Light 500 watt</div>
+              <div class="col-2">
+                <i class="bi bi-dash-circle text-danger"></i> 2
+                <i class="bi bi-plus-circle text-success"></i>
+              </div>
+              <div class="col-2">1200</div>
+              <div class="col-2">2400</div>
+              <div class="col-6">Flood Light 500 watt</div>
+              <div class="col-2">
+                <i class="bi bi-dash-circle text-danger"></i> 2
+                <i class="bi bi-plus-circle text-success"></i>
+              </div>
+              <div class="col-2">1200</div>
+              <div class="col-2">2400</div>
+              <div class="col-6">Flood Light 500 watt</div>
+              <div class="col-2">
+                <i class="bi bi-dash-circle text-danger"></i> 2
+                <i class="bi bi-plus-circle text-success"></i>
+              </div>
+              <div class="col-2">1200</div>
+              <div class="col-2">2400</div>
+            </div>
+            <hr />
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Modal cart end -->
+
+    <!-- Modal  login start -->
+    <div
+      class="modal fade"
+      id="login-modal"
+      tabindex="-1"
+      aria-labelledby="exampleModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <form action="">
+            <div class="modal-header">
+              <h1
+                class="modal-title fs-5 d-flex align-items-center"
+                id="exampleModalLabel"
+              >
+                <i class="bi bi-person-circle fs-3 me-2"></i> User Login
+              </h1>
+              <button
+                type="reset"
+                class="btn-close shadow-none"
+                data-bs-dismiss="modal"
+                aria-label="Close"
+              ></button>
+            </div>
+            <div class="modal-body">
+              <div class="mb-3">
+                <label class="form-label">Email address</label>
+                <input type="email" class="form-control shadow-none" />
+              </div>
+              <div class="mb-4">
+                <label class="form-label">Password</label>
+                <input type="password" class="form-control shadow-none" />
+              </div>
+              <div
+                class="d-flex align-items-center justify-content-between mb-2"
+              >
+                <button type="submit" class="btn btn-dark shadow-none">
+                  LOGIN
+                </button>
+                <a
+                  href="javascript: void(0)"
+                  class="text-secondary text-decoration-none"
+                  >Forgot password?</a
+                >
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+    <!-- Modal login end -->
+
+    <!-- modal register start -->
+    <div
+      class="modal fade"
+      id="register-modal"
+      tabindex="-1"
+      aria-labelledby="exampleModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+          <form action="">
+            <div class="modal-header">
+              <h1
+                class="modal-title fs-5 d-flex align-items-center"
+                id="exampleModalLabel"
+              >
+                <i class="bi bi-person-lines-fill fs-3 me-2"></i> User
+                Registratin
+              </h1>
+              <button
+                type="reset"
+                class="btn-close shadow-none"
+                data-bs-dismiss="modal"
+                aria-label="Close"
+              ></button>
+            </div>
+            <div class="modal-body">
+              <span
+                class="badge rounded-pill text-bg-warning text-dark mb-3 text-wrap lh-base"
+                >Note: Your details must match with your ID (NID, PASSPORT,
+                DRIVING LICENSE, etc) that will be required during
+                check-in.</span
+              >
+              <div class="container-fluid">
+                <div class="row">
+                  <div class="col-md-6 ps-0 mb-3">
+                    <label class="form-label">Name</label>
+                    <input type="text" class="form-control shadow-none" />
+                  </div>
+                  <div class="col-md-6 p-0">
+                    <label class="form-label">Email</label>
+                    <input type="email" class="form-control shadow-none" />
+                  </div>
+                  <div class="col-md-6 ps-0 mb-3">
+                    <label class="form-label">Phone Number</label>
+                    <input type="number" class="form-control shadow-none" />
+                  </div>
+                  <div class="col-md-6 p-0">
+                    <label class="form-label">Picture</label>
+                    <input type="file" class="form-control shadow-none" />
+                  </div>
+                  <div class="col-md-12 p-0 mb-3">
+                    <label class="form-label">Address</label>
+                    <textarea
+                      class="form-control shadow-none"
+                      rows="1"
+                    ></textarea>
+                  </div>
+                  <div class="col-md-6 ps-0 mb-3">
+                    <label class="form-label">Password</label>
+                    <input type="password" class="form-control shadow-none" />
+                  </div>
+                  <div class="col-md-6 p-0">
+                    <label class="form-label">Confirm password</label>
+                    <input type="password" class="form-control shadow-none" />
+                  </div>
+                </div>
+              </div>
+              <div class="d-flex align-items-center justify-content-between">
+                <button type="submit" class="btn btn-dark shadow-none">
+                  Register
+                </button>
+                <a
+                  href="javascript: void(0)"
+                  class="text-secondary text-decoration-none"
+                  >You have an account?</a
+                >
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+    <!-- Modal register end -->
+
+    <!-- Swiper carousel start -->
+    <div class="container-fluid mt-4">
+      <div class="swiper mySwiper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide carousel">
+            <img src="assets/img/carousel/1.jpg" class="w-100 d-block" />
+          </div>
+          <div class="swiper-slide carousel">
+            <img src="assets/img/carousel/2.jpg" class="w-100 d-block" />
+          </div>
+          <div class="swiper-slide carousel">
+            <img src="assets/img/carousel/3.jpg" class="w-100 d-block" />
+          </div>
+          <div class="swiper-slide carousel">
+            <img src="assets/img/carousel/4.jpg" class="w-100 d-block" />
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Swiper carousel end -->
+
+    <!-- check avaliblety start -->
+    <div class="container availability-form">
+      <div class="row">
+        <div class="col-lg-12 bg-white shadow p-4 rounded">
+          <h5 class="mb-4">Check Booking Availabillity</h5>
+          <form action="">
+            <div class="row align-items-end">
+              <div class="col-lg-3 mb-3">
+                <label class="form-label" style="font-weight: 500"
+                  >Check-in</label
+                >
+                <input type="date" class="form-control shadow-none" />
+              </div>
+              <div class="col-lg-3 mb-3">
+                <label class="form-label" style="font-weight: 500"
+                  >Check-out</label
+                >
+                <input type="date" class="form-control shadow-none" />
+              </div>
+              <div class="col-lg-3 mb-3">
+                <label class="form-label" style="font-weight: 500">Adult</label>
+                <select class="form-select shadow-none">
+                  <option selected>Open this select menu</option>
+                  <option value="1">One</option>
+                  <option value="2">Two</option>
+                  <option value="3">Three</option>
+                </select>
+              </div>
+              <div class="col-lg-2 mb-3">
+                <label class="form-label" style="font-weight: 500"
+                  >Children</label
+                >
+                <select class="form-select shadow-none">
+                  <option selected>Open this select menu</option>
+                  <option value="1">One</option>
+                  <option value="2">Two</option>
+                  <option value="3">Three</option>
+                </select>
+              </div>
+              <div class="col-lg-1 mb-lg-3 mt-2">
+                <button
+                  type="submit"
+                  class="btn text-white shadow-none custom-bg"
+                >
+                  Check
+                </button>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+    <!-- check avaliblety end -->
+
+    <!-- About us start -->
+    <div class="my-5 px-4" id="aboutus">
+      <h2 class="fw-bold text-center">About Us</h2>
+      <div class="h-line bg-dark"></div>
+      <p class="text-center mt-3">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. <br />
+        Pariatur eum rerum deserunt nam suscipit voluptatem, neque accusantium
+        possimus sed animi.
+      </p>
+    </div>
+
+    <div class="container">
+      <div class="row justify-conent-between align-items-center">
+        <div class="col-lg-6 col-md-5 mb-4 order-lg-1 order-md-1 order-2">
+          <h3 class="mb-3">Lorem ipsum dolor sit.</h3>
+          <p>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. <br />
+            Ipsa corrupti natus qui, cumque quas accusantium eos. Lorem ipsum,
+            dolor sit amet consectetur adipisicing elit. <br />
+            Ipsa corrupti natus qui, cumque quas accusantium eos.
+          </p>
+        </div>
+        <div class="col-lg-5 col-md-5 mb-4 order-1">
+          <img src="assets/img/about/about.jpg" class="w-100" />
+        </div>
+      </div>
+    </div>
+    <!-- About us end -->
+
+    <!-- achivment start -->
+    <div class="container mt-5">
+      <div class="row">
+        <div class="col-lg-3 col-md-6 mb-4 px-4">
+          <div
+            class="bg-white rounded shadow p-4 border-top border-4 text-center box"
+          >
+            <img src="assets/img/about/hotel.svg" width="70px" />
+            <h4 class="mt-3">100+ Rooms</h4>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-6 mb-4 px-4">
+          <div
+            class="bg-white rounded shadow p-4 border-top border-4 text-center box"
+          >
+            <img src="assets/img/about/customers.svg" width="70px" />
+            <h4 class="mt-3">200+ Csutomers</h4>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-6 mb-4 px-4">
+          <div
+            class="bg-white rounded shadow p-4 border-top border-4 text-center box"
+          >
+            <img src="assets/img/about/rating.svg" width="70px" />
+            <h4 class="mt-3">150+ Reviews</h4>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-6 mb-4 px-4">
+          <div
+            class="bg-white rounded shadow p-4 border-top border-4 text-center box"
+          >
+            <img src="assets/img/about/staff.svg" width="70px" />
+            <h4 class="mt-3">200+ Staff</h4>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- achivment end -->
+
+    <!-- electrian of the month start -->
+    <h3 class="mt-5 fw-bold text-center">Electrician of the month</h3>
+    <div class="h-line mb-5 bg-dark"></div>
+    <div class="container px-4">
+      <div class="swiper team mb-5">
+        <div class="swiper-wrapper">
+          <div
+            class="swiper-slide bg-white text-center overflow-hidden rounded"
+          >
+            <img src="assets/img/about/worker1.jpg" class="w-100" />
+            <h5 class="mt-2">Abu Bakar</h5>
+          </div>
+          <div
+            class="swiper-slide bg-white text-center overflow-hidden rounded"
+          >
+            <img src="assets/img/about/worker3.jpg" class="w-100" />
+            <h5 class="mt-2">Rajib Hoda</h5>
+          </div>
+          <div
+            class="swiper-slide bg-white text-center overflow-hidden rounded"
+          >
+            <img src="assets/img/about/worker1.jpg" class="w-100" />
+            <h5 class="mt-2">Abu Bakar</h5>
+          </div>
+          <div
+            class="swiper-slide bg-white text-center overflow-hidden rounded"
+          >
+            <img src="assets/img/about/worker3.jpg" class="w-100" />
+            <h5 class="mt-2">Rajib Hoda</h5>
+          </div>
+          <div
+            class="swiper-slide bg-white text-center overflow-hidden rounded"
+          >
+            <img src="assets/img/about/worker1.jpg" class="w-100" />
+            <h5 class="mt-2">Abu Bakar</h5>
+          </div>
+          <div
+            class="swiper-slide bg-white text-center overflow-hidden rounded"
+          >
+            <img src="assets/img/about/worker3.jpg" class="w-100" />
+            <h5 class="mt-2">Rajib Hoda</h5>
+          </div>
+        </div>
+        <div class="swiper-pagination"></div>
+      </div>
+    </div>
+    <!-- electrian of the month end -->
+
+    <!-- Electrician cards start -->
+    <h2 class="mt-5 fw-bold text-center">Electricians</h2>
+    <div class="h-line mb-4 bg-dark"></div>
+    <div class="container mt-5">
+      <div class="row">
+        <div class="col-lg-4 col-md-6 my-3">
+          <div
+            class="card border-0 shadow"
+            style="max-width: 350px; margin: auto"
+          >
+            <img src="assets/img/about/worker2.jpg" class="card-img-top" />
+            <div class="card-body">
+              <div class="d-flex justify-content-between">
+                <h5>Najmul Papon</h5>
+                <h6 class="mb-4"><em>700/- Per Hour</em></h6>
+              </div>
+              <div class="features mb-4">
+                <h6 class="mb-1">Experience</h6>
+                <span
+                  class="badge rounded-pill text-bg-light text-dark text-wrap"
+                  >2+ years experiences</span
+                >
+                <span
+                  class="badge rounded-pill text-bg-light text-dark text-wrap"
+                  >Compleated 50+ works</span
+                >
+              </div>
+              <div class="rating mb-4">
+                <h6 class="mb-1">Rating</h6>
+                <span class="badge rounded-pill bg-light">
+                  <i class="bi bi-star-fill text-warning"></i>
+                  <i class="bi bi-star-fill text-warning"></i>
+                  <i class="bi bi-star-fill text-warning"></i>
+                  <i class="bi bi-star-fill text-warning"></i>
+                </span>
+              </div>
+              <div class="d-flex justify-content-evenly mb-2">
+                <a href="#" class="btn btn-sm text-white custom-bg shadow-none"
+                  >Book Now</a
+                >
+                <a href="#" class="btn btn-sm btn-outline-dark shadow-none"
+                  >More Details</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6 my-3">
+          <div
+            class="card border-0 shadow"
+            style="max-width: 350px; margin: auto"
+          >
+            <img src="assets/img/about/worker3.jpg" class="card-img-top" />
+            <div class="card-body">
+              <div class="d-flex justify-content-between">
+                <h5>Jalal Younus</h5>
+                <h6 class="mb-4"><em>500/- Per Hour</em></h6>
+              </div>
+              <div class="features mb-4">
+                <h6 class="mb-1">Experience</h6>
+                <span
+                  class="badge rounded-pill text-bg-light text-dark text-wrap"
+                  >2+ years experiences</span
+                >
+                <span
+                  class="badge rounded-pill text-bg-light text-dark text-wrap"
+                  >Compleated 50+ works</span
+                >
+              </div>
+              <div class="rating mb-4">
+                <h6 class="mb-1">Rating</h6>
+                <span class="badge rounded-pill bg-light">
+                  <i class="bi bi-star-fill text-warning"></i>
+                  <i class="bi bi-star-fill text-warning"></i>
+                  <i class="bi bi-star-fill text-warning"></i>
+                  <i class="bi bi-star-fill text-warning"></i>
+                </span>
+              </div>
+              <div class="d-flex justify-content-evenly mb-2">
+                <a href="#" class="btn btn-sm text-white custom-bg shadow-none"
+                  >Book Now</a
+                >
+                <a href="#" class="btn btn-sm btn-outline-dark shadow-none"
+                  >More Details</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6 my-3">
+          <div
+            class="card border-0 shadow"
+            style="max-width: 350px; margin: auto"
+          >
+            <img src="assets/img/about/worker1.jpg" class="card-img-top" />
+            <div class="card-body">
+              <div class="d-flex justify-content-between">
+                <h5>Habibul Bashar</h5>
+                <h6 class="mb-4"><em>500/- Per Hour</em></h6>
+              </div>
+              <div class="features mb-4">
+                <h6 class="mb-1">Experience</h6>
+                <span
+                  class="badge rounded-pill text-bg-light text-dark text-wrap"
+                  >2+ years experiences</span
+                >
+                <span
+                  class="badge rounded-pill text-bg-light text-dark text-wrap"
+                  >Compleated 50+ works</span
+                >
+              </div>
+              <div class="rating mb-4">
+                <h6 class="mb-1">Rating</h6>
+                <span class="badge rounded-pill bg-light">
+                  <i class="bi bi-star-fill text-warning"></i>
+                  <i class="bi bi-star-fill text-warning"></i>
+                  <i class="bi bi-star-fill text-warning"></i>
+                  <i class="bi bi-star-fill text-warning"></i>
+                </span>
+              </div>
+              <div class="d-flex justify-content-evenly mb-2">
+                <a href="#" class="btn btn-sm text-white custom-bg shadow-none"
+                  >Book Now</a
+                >
+                <a href="#" class="btn btn-sm btn-outline-dark shadow-none"
+                  >More Details</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-12 text-center mt-5">
+          <a
+            href=""
+            class="btn btn-sm btn-outline-dark rounded-0 fw-bold shadow-none"
+            >More Electricians</a
+          >
+        </div>
+      </div>
+    </div>
+    <!-- Electrician cards end -->
+
+    <!-- services start -->
+    <h2 class="mt-5 fw-bold text-center">Our Services</h2>
+    <div class="h-line mb-4 bg-dark"></div>
+    <div class="container">
+      <div class="row justify-content-evenly px-lg-0 px-md-0 px-g">
+        <div
+          class="col-lg-2 col-md-2 text-center bg-white rounded shadow py-4 my-3"
+        >
+          <img src="assets/img/services/wifi.svg" width="80px" />
+          <h5 class="mt-3">Wifi</h5>
+        </div>
+        <div
+          class="col-lg-2 col-md-2 text-center bg-white rounded shadow py-4 my-3"
+        >
+          <img src="assets/img/services/ac.svg" width="80px" />
+          <h5 class="mt-3">Wifi</h5>
+        </div>
+        <div
+          class="col-lg-2 col-md-2 text-center bg-white rounded shadow py-4 my-3"
+        >
+          <img src="assets/img/services/fire.svg" width="80px" />
+          <h5 class="mt-3">Wifi</h5>
+        </div>
+        <div
+          class="col-lg-2 col-md-2 text-center bg-white rounded shadow py-4 my-3"
+        >
+          <img src="assets/img/services/hitter.svg" width="80px" />
+          <h5 class="mt-3">Wifi</h5>
+        </div>
+        <div
+          class="col-lg-2 col-md-2 text-center bg-white rounded shadow py-4 my-3"
+        >
+          <img src="assets/img/services/spa.svg" width="80px" />
+          <h5 class="mt-3">Wifi</h5>
+        </div>
+        <div class="col-lg-12 text-center mt-5">
+          <a
+            href=""
+            class="btn btn-sm btn-outline-dark rounded-0 fw-bold shadow-none"
+            >More Services</a
+          >
+        </div>
+      </div>
+    </div>
+    <!-- servisec end -->
+
+    <!-- shop start -->
+    <h2 class="mt-5 fw-bold text-center">Buy Anything</h2>
+    <div class="h-line mb-4 bg-dark"></div>
+    <div class="container mt-5">
+      <div class="row">
+        <div class="col-lg-4 col-md-6 my-3">
+          <div class="card border-0 shadow" style="margin: auto">
+            <img
+              src="assets/img/products/light.jpg"
+              style="height: 300px"
+              ;
+              class="card-img-top"
+            />
+            <div class="card-body">
+              <div class="d-flex justify-content-between">
+                <h5>FLOOD LIGHT</h5>
+                <h6 class="mb-4"><em>BDT 1500/-</em></h6>
+              </div>
+              <div class="features mb-4">
+                <h6>
+                  Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                  Nihil architecto accusantium illo.
+                </h6>
+                <a href="">
+                  <span
+                    class="badge rounded-pill text-bg-light text-dark text-wrap"
+                    >Walton</span
+                  >
+                </a>
+              </div>
+              <div class="rating mb-4">
+                <h6 class="mb-1">Rating</h6>
+                <span class="badge rounded-pill bg-light">
+                  <i class="bi bi-star-fill text-warning"></i>
+                  <i class="bi bi-star-fill text-warning"></i>
+                  <i class="bi bi-star-fill text-warning"></i>
+                  <i class="bi bi-star-fill text-warning"></i>
+                </span>
+              </div>
+              <div class="d-flex justify-content-evenly mb-2">
+                <a href="#" class="btn btn-sm text-white custom-bg shadow-none"
+                  >Buy Now</a
+                >
+                <a href="#" class="btn btn-sm btn-outline-dark shadow-none"
+                  >More Details</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6 my-3">
+          <div class="card border-0 shadow" style="margin: auto">
+            <img
+              src="assets/img/products/light.jpg"
+              style="height: 300px"
+              ;
+              class="card-img-top"
+            />
+            <div class="card-body">
+              <div class="d-flex justify-content-between">
+                <h5>FLOOD LIGHT</h5>
+                <h6 class="mb-4"><em>BDT 1500/-</em></h6>
+              </div>
+              <div class="features mb-4">
+                <h6>
+                  Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                  Nihil architecto accusantium illo.
+                </h6>
+                <a href="">
+                  <span
+                    class="badge rounded-pill text-bg-light text-dark text-wrap"
+                    >Walton</span
+                  >
+                </a>
+              </div>
+              <div class="rating mb-4">
+                <h6 class="mb-1">Rating</h6>
+                <span class="badge rounded-pill bg-light">
+                  <i class="bi bi-star-fill text-warning"></i>
+                  <i class="bi bi-star-fill text-warning"></i>
+                  <i class="bi bi-star-fill text-warning"></i>
+                  <i class="bi bi-star-fill text-warning"></i>
+                </span>
+              </div>
+              <div class="d-flex justify-content-evenly mb-2">
+                <a href="#" class="btn btn-sm text-white custom-bg shadow-none"
+                  >Buy Now</a
+                >
+                <a href="#" class="btn btn-sm btn-outline-dark shadow-none"
+                  >More Details</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6 my-3">
+          <div class="card border-0 shadow" style="margin: auto">
+            <img
+              src="assets/img/products/light.jpg"
+              style="height: 300px"
+              ;
+              class="card-img-top"
+            />
+            <div class="card-body">
+              <div class="d-flex justify-content-between">
+                <h5>FLOOD LIGHT</h5>
+                <h6 class="mb-4"><em>BDT 1500/-</em></h6>
+              </div>
+              <div class="features mb-4">
+                <h6>
+                  Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                  Nihil architecto accusantium illo.
+                </h6>
+                <a href="">
+                  <span
+                    class="badge rounded-pill text-bg-light text-dark text-wrap"
+                    >Walton</span
+                  >
+                </a>
+              </div>
+              <div class="rating mb-4">
+                <h6 class="mb-1">Rating</h6>
+                <span class="badge rounded-pill bg-light">
+                  <i class="bi bi-star-fill text-warning"></i>
+                  <i class="bi bi-star-fill text-warning"></i>
+                  <i class="bi bi-star-fill text-warning"></i>
+                  <i class="bi bi-star-fill text-warning"></i>
+                </span>
+              </div>
+              <div class="d-flex justify-content-evenly mb-2">
+                <a href="#" class="btn btn-sm text-white custom-bg shadow-none"
+                  >Buy Now</a
+                >
+                <a href="#" class="btn btn-sm btn-outline-dark shadow-none"
+                  >More Details</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-12 text-center mt-5">
+          <a
+            href=""
+            class="btn btn-sm btn-outline-dark rounded-0 fw-bold shadow-none"
+            >More Products</a
+          >
+        </div>
+      </div>
+    </div>
+    <!-- shop end -->
+
+    <!-- testimonials start -->
+    <h2 class="mt-5 fw-bold text-center">Our Testimonials</h2>
+    <div class="h-line mb-4 bg-dark"></div>
+    <div class="container mt-5" id="testimonials">
+      <div class="swiper swiper-testimonials">
+        <div class="swiper-wrapper mb-5">
+          <div class="swiper-slide bg-white p-4">
+            <div class="profile d-flex align-items-center p-4">
+              <img src="assets/img/testimonials/1.jpg" width="30px" />
+              <h6 class="m-0 ms-2">Muhammad Sumama</h6>
+            </div>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+              Cupiditate unde aliquam optio vero alias! Nam recusandae deleniti
+              amet culpa sapiente?
+            </p>
+            <div class="rating">
+              <i class="bi bi-star-fill text-warning"></i>
+              <i class="bi bi-star-fill text-warning"></i>
+              <i class="bi bi-star-fill text-warning"></i>
+              <i class="bi bi-star-fill text-warning"></i>
+            </div>
+          </div>
+          <div class="swiper-slide bg-white p-4">
+            <div class="profile d-flex align-items-center p-4">
+              <img src="assets/img/testimonials/2.jpg" width="30px" />
+              <h6 class="m-0 ms-2">Abu Bakar</h6>
+            </div>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+              Cupiditate unde aliquam optio vero alias! Nam recusandae deleniti
+              amet culpa sapiente?
+            </p>
+            <div class="rating">
+              <i class="bi bi-star-fill text-warning"></i>
+              <i class="bi bi-star-fill text-warning"></i>
+              <i class="bi bi-star-fill text-warning"></i>
+              <i class="bi bi-star-fill text-warning"></i>
+            </div>
+          </div>
+          <div class="swiper-slide bg-white mb-3">
+            <div class="profile d-flex align-items-center p-4">
+              <img src="assets/img/testimonials/3.jpg" width="30px" />
+              <h6 class="m-0 ms-2">Mahfuzur Rahman</h6>
+            </div>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+              Cupiditate unde aliquam optio vero alias! Nam recusandae deleniti
+              amet culpa sapiente?
+            </p>
+            <div class="rating">
+              <i class="bi bi-star-fill text-warning"></i>
+              <i class="bi bi-star-fill text-warning"></i>
+              <i class="bi bi-star-fill text-warning"></i>
+              <i class="bi bi-star-fill text-warning"></i>
+            </div>
+          </div>
+          <div class="swiper-slide bg-white p-4">
+            <div class="profile d-flex align-items-center p-4">
+              <img src="assets/img/testimonials/1.jpg" width="30px" />
+              <h6 class="m-0 ms-2">Muhammad Sumama</h6>
+            </div>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+              Cupiditate unde aliquam optio vero alias! Nam recusandae deleniti
+              amet culpa sapiente?
+            </p>
+            <div class="rating">
+              <i class="bi bi-star-fill text-warning"></i>
+              <i class="bi bi-star-fill text-warning"></i>
+              <i class="bi bi-star-fill text-warning"></i>
+              <i class="bi bi-star-fill text-warning"></i>
+            </div>
+          </div>
+          <div class="swiper-slide bg-white p-4">
+            <div class="profile d-flex align-items-center p-4">
+              <img src="assets/img/testimonials/2.jpg" width="30px" />
+              <h6 class="m-0 ms-2">Abu Bakar</h6>
+            </div>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+              Cupiditate unde aliquam optio vero alias! Nam recusandae deleniti
+              amet culpa sapiente?
+            </p>
+            <div class="rating">
+              <i class="bi bi-star-fill text-warning"></i>
+              <i class="bi bi-star-fill text-warning"></i>
+              <i class="bi bi-star-fill text-warning"></i>
+              <i class="bi bi-star-fill text-warning"></i>
+            </div>
+          </div>
+          <div class="swiper-slide bg-white mb-3">
+            <div class="profile d-flex align-items-center p-4">
+              <img src="assets/img/testimonials/3.jpg" width="30px" />
+              <h6 class="m-0 ms-2">Mahfuzur Rahman</h6>
+            </div>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+              Cupiditate unde aliquam optio vero alias! Nam recusandae deleniti
+              amet culpa sapiente?
+            </p>
+            <div class="rating">
+              <i class="bi bi-star-fill text-warning"></i>
+              <i class="bi bi-star-fill text-warning"></i>
+              <i class="bi bi-star-fill text-warning"></i>
+              <i class="bi bi-star-fill text-warning"></i>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-pagination"></div>
+      </div>
+    </div>
+    <!-- testimonial end -->
+
+    <!-- Partner start -->
+    <h2 class="mt-5 fw-bold text-center">Our Honourable Partners</h2>
+    <div class="h-line mb-4 bg-dark"></div>
+    <div class="container mt-5">
+      <div class="swiper partners mb-5">
+        <div class="swiper-wrapper mb-5">
+          <div class="swiper-slide text-center">
+            <img src="assets/img/partners/brb.png" style="height: 150px" />
+            <h5 class="mt-2">BRB</h5>
+          </div>
+          <div class="swiper-slide text-center">
+            <img src="assets/img/partners/lg.jpg" style="height: 150px" />
+            <h5 class="mt-2">LG</h5>
+          </div>
+          <div class="swiper-slide text-center">
+            <img src="assets/img/partners/click.jpg" style="height: 150px" />
+            <h5 class="mt-2">Click</h5>
+          </div>
+          <div class="swiper-slide text-center">
+            <img src="assets/img/partners/minister.png" style="height: 150px" />
+            <h5 class="mt-2">Minister</h5>
+          </div>
+          <div class="swiper-slide text-center">
+            <img src="assets/img/partners/walton.jpeg" style="height: 150px" />
+            <h5 class="mt-2">Walton</h5>
+          </div>
+        </div>
+        <div class="swiper-pagination"></div>
+      </div>
+    </div>
+    <!-- Partner end -->
+
+    <!--Frequently Ask Question Start-->
+    <h2 class="mt-5 fw-bold text-center">Frequently Ask Question</h2>
+    <div class="h-line mb-4 bg-dark"></div>
+    <section id="faq" class="container mt-5">
+      <div class="row d-flex border gx-5 border-light">
+        <div class="auto-q col-md-6 col-sm-12 p-4 shadow">
+          <div class="accordion" id="accordionExample">
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="headingOne">
+                <button
+                  class="accordion-button"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#collapseOne"
+                  aria-expanded="true"
+                  aria-controls="collapseOne"
+                >
+                  Lorem ipsum dolor sit amet.
+                </button>
+              </h2>
+              <div
+                id="collapseOne"
+                class="accordion-collapse collapse show"
+                aria-labelledby="headingOne"
+                data-bs-parent="#accordionExample"
+              >
+                <div class="accordion-body">
+                  Lorem, ipsum dolor sit amet consectetur adipisicing elit. Cum
+                  pariatur omnis possimus ipsam voluptas? Fugiat quas aliquid ea
+                  veniam. Culpa adipisci at officia accusamus modi, hic dolore
+                  eligendi suscipit nostrum sunt perferendis? Fuga dolores
+                  itaque adipisci corrupti ad architecto quos in laudantium
+                  dolorum, incidunt assumenda illo repudiandae quis tempore
+                  accusantium? Lorem ipsum dolor sit amet consectetur
+                  adipisicing elit. Hic nam perferendis, officia rem earum
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="headingTwo">
+                <button
+                  class="accordion-button collapsed"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#collapseTwo"
+                  aria-expanded="false"
+                  aria-controls="collapseTwo"
+                >
+                  Lorem ipsum dolor sit amet consectetur.
+                </button>
+              </h2>
+              <div
+                id="collapseTwo"
+                class="accordion-collapse collapse"
+                aria-labelledby="headingTwo"
+                data-bs-parent="#accordionExample"
+              >
+                <div class="accordion-body">
+                  Lorem ipsum dolor, sit amet consectetur adipisicing elit. Enim
+                  similique asperiores veniam. Molestias est quidem provident,
+                  nihil voluptatem aspernatur dolorem.
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="headingThree">
+                <button
+                  class="accordion-button collapsed"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#collapseThree"
+                  aria-expanded="false"
+                  aria-controls="collapseThree"
+                >
+                  Lorem ipsum dolor sit amet consectetur adipisicing.
+                </button>
+              </h2>
+              <div
+                id="collapseThree"
+                class="accordion-collapse collapse"
+                aria-labelledby="headingThree"
+                data-bs-parent="#accordionExample"
+              >
+                <div class="accordion-body">
+                  Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                  Minima placeat quos molestias impedit, eius sunt.
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="headingFour">
+                <button
+                  class="accordion-button collapsed"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#collapseFour"
+                  aria-expanded="false"
+                  aria-controls="collapseFour"
+                >
+                  Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                </button>
+              </h2>
+              <div
+                id="collapseFour"
+                class="accordion-collapse collapse"
+                aria-labelledby="headingFour"
+                data-bs-parent="#accordionExample"
+              >
+                <div class="accordion-body">
+                  Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                  Accusantium omnis deleniti molestiae ratione dignissimos
+                  perferendis?
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 col-sm-12">
+          <div class="p-4 shadow">
+            <h2 class="text-center">Have Any Other Questions?</h2>
+            <form action="">
+              <div class="mt-3">
+                <label class="form-label" style="font-weight: 500">Name</label>
+                <input type="text" class="form-control shadow-none" />
+              </div>
+              <div class="mt-3">
+                <label class="form-label" style="font-weight: 500">Email</label>
+                <input type="text" class="form-control shadow-none" />
+              </div>
+              <div class="mt-3">
+                <label class="form-label" style="font-weight: 500"
+                  >Massage</label
+                >
+                <textarea
+                  class="form-control shadow-none"
+                  rows="4"
+                  style="resize: none"
+                ></textarea>
+              </div>
+              <button type="submit" class="btn text-white custom-bg mt-3">
+                SEND
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--Frequently Ask Question End-->
+
+    <!-- Leatest blog start -->
+    <h2 class="mt-5 fw-bold text-center">Letest Blog</h2>
+    <div class="h-line mb-4 bg-dark"></div>
+    <div class="container mt-5">
+      <div class="swiper blog">
+        <div class="swiper-wrapper mb-5">
+          <div class="swiper-slide text-center">
+            <div class="card border-none shadow">
+              <img src="assets/img/about/about.jpg" alt="" />
+              <div class="card-body">
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo,
+                  laudantium accusamus nisi sapiente enim at?
+                </p>
+                <button class="custom-bg btn btn-success col-12">
+                  Read More <i class="bi bi-arrow-right"></i>
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide text-center">
+            <div class="card border-none shadow">
+              <img src="assets/img/about/about.jpg" alt="" />
+              <div class="card-body">
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo,
+                  laudantium accusamus nisi sapiente enim at?
+                </p>
+                <button class="custom-bg btn btn-success col-12">
+                  Read More <i class="bi bi-arrow-right"></i>
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide text-center">
+            <div class="card border-none shadow">
+              <img src="assets/img/about/about.jpg" alt="" />
+              <div class="card-body">
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo,
+                  laudantium accusamus nisi sapiente enim at?
+                </p>
+                <button class="btn btn-success custom-bg col-12">
+                  Read More <i class="bi bi-arrow-right"></i>
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide text-center">
+            <div class="card border-none shadow">
+              <img src="assets/img/about/about.jpg" alt="" />
+              <div class="card-body">
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo,
+                  laudantium accusamus nisi sapiente enim at?
+                </p>
+                <button class="custom-bg btn btn-success col-12">
+                  Read More <i class="bi bi-arrow-right"></i>
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide text-center">
+            <div class="card border-none shadow">
+              <img src="assets/img/about/about.jpg" alt="" />
+              <div class="card-body">
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo,
+                  laudantium accusamus nisi sapiente enim at?
+                </p>
+                <button class="custom-bg btn btn-success col-12">
+                  Read More <i class="bi bi-arrow-right"></i>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-pagination"></div>
+      </div>
+    </div>
+    <!-- Leatest blog end -->
+
+    <!-- Contact us start -->
+    <div class="my-5 px-4">
+      <h2 class="fw-bold text-center">Reach Us</h2>
+      <div class="h-line bg-dark"></div>
+      <p class="text-center mt-3">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. <br />
+        Pariatur eum rerum deserunt nam suscipit voluptatem, neque accusantium
+        possimus sed animi.
+      </p>
+    </div>
+    <div class="container" id="contactus">
+      <div class="row">
+        <div class="col-lg-6 col-md-6 mb-5 px-4">
+          <div class="bg-white rounded shadow p-4">
+            <iframe
+              class="w-100 rounded mb-4"
+              height="320"
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d392.4710302057685!2d92.3263463873919!3d20.635592174217823!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x30ae2317303423f7%3A0x81e4502d7e6c86ff!2sPraasad%20Paradise%20Hotel%20-%20Saint%20Martin&#39;s%20Island!5e0!3m2!1sen!2sbd!4v1677939762936!5m2!1sen!2sbd"
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+            ></iframe>
+
+            <h5>Address</h5>
+            <a
+              href="https://goo.gl/maps/HcsnNEXk3bBFyY6q9"
+              target="_blank"
+              class="d-inline-block text-decoration-none text-dark"
+              ><i class="bi bi-geo-alt-fill"></i> Xyz, Saintmartin</a
+            >
+            <h5 class="mt-4">Call Us</h5>
+            <a
+              href="tel: +88123456789"
+              class="b-inline-block mb-2 text-decoration-none text-dark"
+              ><i class="bi bi-telephone-fill"></i> +88123456789</a
+            >
+            <br />
+            <a
+              href="tel: +88123456789"
+              class="b-inline-block text-decoration-none text-dark"
+              ><i class="bi bi-telephone-fill"></i> +88123456789</a
+            >
+
+            <h5 class="mt-4">Email</h5>
+            <a
+              href="mailto: admin@gmail.com"
+              class="d-inline-block text-decoration-none text-dark"
+              ><i class="bi bi-envelope-fill"></i> admin@gmail.com</a
+            >
+          </div>
+        </div>
+        <div class="col-lg-6 col-md-6 px-4">
+          <div class="bg-white rounded shadow p-4">
+            <form action="">
+              <h5>Send Massage</h5>
+              <div class="mt-3">
+                <label class="form-label" style="font-weight: 500">Name</label>
+                <input type="text" class="form-control shadow-none" />
+              </div>
+              <div class="mt-3">
+                <label class="form-label" style="font-weight: 500">Email</label>
+                <input type="text" class="form-control shadow-none" />
+              </div>
+              <div class="mt-3">
+                <label class="form-label" style="font-weight: 500"
+                  >Subject</label
+                >
+                <input type="text" class="form-control shadow-none" />
+              </div>
+              <div class="mt-3">
+                <label class="form-label" style="font-weight: 500"
+                  >Massage</label
+                >
+                <textarea
+                  class="form-control shadow-none"
+                  rows="8"
+                  style="resize: none"
+                ></textarea>
+              </div>
+              <button type="submit" class="btn text-white custom-bg mt-3">
+                SEND
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Contact us end -->
+
+    <!-- footer start -->
+    <div class="container-fluid bg-white-mt-5">
+      <div class="row">
+        <div class="col-lg-4 p-4">
+          <h3 class="h-font fw-bold fs-3 mb-2">ElectricMatch</h3>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum,
+            vitae eaque sit repellat eos quia.
+          </p>
+        </div>
+        <div class="col-lg-4 p-4">
+          <h5 class="mb-3">Quick Links</h5>
+          <a
+            href="index.html"
+            class="d-inline-block mb-2 text-dark text-decoration-none"
+            >Home</a
+          ><br />
+          <a
+            href="#aboutus"
+            class="d-inline-block mb-2 text-dark text-decoration-none"
+            >About Us</a
+          ><br />
+          <a
+            href="electrician.html"
+            class="d-inline-block mb-2 text-dark text-decoration-none"
+            >Electrician</a
+          ><br />
+          <a
+            href="services.html"
+            class="d-inline-block mb-2 text-dark text-decoration-none"
+            >Services</a
+          ><br />
+          <a
+            href="shop.html"
+            class="d-inline-block mb-2 text-dark text-decoration-none"
+            >Shop</a
+          ><br />
+          <a
+            href="#testimonials"
+            class="d-inline-block mb-2 text-dark text-decoration-none"
+            >Testimonials</a
+          ><br />
+          <a
+            href="#faq"
+            class="d-inline-block mb-2 text-dark text-decoration-none"
+            >FAQ</a
+          ><br />
+          <a
+            href="blog.html"
+            class="d-inline-block mb-2 text-dark text-decoration-none"
+            >Blog</a
+          ><br />
+          <a href="#" class="d-inline-block mb-2 text-dark text-decoration-none"
+            >Contact Us</a
+          ><br />
+          <button
+            type="button"
+            class="btn btn-outline-dark shadow-none me-lg-2 me-3"
+            data-bs-toggle="modal"
+            data-bs-target="#electrican-login-modal"
+          >
+            <i class="bi bi-person-fill-add me-1"></i> Login As A Electrician
+          </button>
+        </div>
+        <div class="col-lg-4 p-4">
+          <h5 class="mb-3">Follow Us</h5>
+          <a href="" class="d-inline-block text-dark text-decoration-none mb-4">
+            <i class="bi bi-facebook me-1"></i> Facebook </a
+          ><br />
+          <a href="" class="d-inline-block text-dark text-decoration-none mb-4">
+            <i class="bi bi-instagram me-1"></i> Instagram </a
+          ><br />
+          <a href="" class="d-inline-block text-dark text-decoration-none mb-4">
+            <i class="bi bi-linkedin me-1"></i> Linkedin </a
+          ><br />
+          <a href="" class="d-inline-block text-dark text-decoration-none mb-4">
+            <i class="bi bi-pinterest me-1"></i> Pinterest </a
+          ><br />
+          <a href="" class="d-inline-block text-dark text-decoration-none mb-4">
+            <i class="bi bi-twitter me-1"></i> Twitter </a
+          ><br />
+          <h5 class="mb-3">Electrician</h5>
+          <button
+            type="button"
+            class="btn btn-outline-dark shadow-none me-lg-2 me-3"
+            data-bs-toggle="modal"
+            data-bs-target="#electrican-modal"
+          >
+            <i class="bi bi-person-fill-add me-1"></i> Register As A Electrician
+          </button>
+        </div>
+      </div>
+    </div>
+    <h6 class="text-center bg-dark text-white p-3 m-0">
+      Designed And Developed By ElectricMatch
+    </h6>
+    <!-- footer end -->
+
+    <!-- Modal  login start -->
+    <div
+      class="modal fade"
+      id="electrican-login-modal"
+      tabindex="-1"
+      aria-labelledby="exampleModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <form action="">
+            <div class="modal-header">
+              <h1
+                class="modal-title fs-5 d-flex align-items-center"
+                id="exampleModalLabel"
+              >
+                <i class="bi bi-person-circle fs-3 me-2"></i> User Login
+              </h1>
+              <button
+                type="reset"
+                class="btn-close shadow-none"
+                data-bs-dismiss="modal"
+                aria-label="Close"
+              ></button>
+            </div>
+            <div class="modal-body">
+              <div class="mb-3">
+                <label class="form-label">Email address</label>
+                <input type="email" class="form-control shadow-none" />
+              </div>
+              <div class="mb-4">
+                <label class="form-label">Password</label>
+                <input type="password" class="form-control shadow-none" />
+              </div>
+              <div
+                class="d-flex align-items-center justify-content-between mb-2"
+              >
+                <button type="submit" class="btn btn-dark shadow-none">
+                  LOGIN
+                </button>
+                <a
+                  href="javascript: void(0)"
+                  class="text-secondary text-decoration-none"
+                  >Forgot password?</a
+                >
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+    <!-- Modal login end -->
+
+    <!-- modal register start -->
+    <div
+      class="modal fade"
+      id="electrican-modal"
+      tabindex="-1"
+      aria-labelledby="exampleModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+          <form action="">
+            <div class="modal-header">
+              <h1
+                class="modal-title fs-5 d-flex align-items-center"
+                id="exampleModalLabel"
+              >
+                <i class="bi bi-person-lines-fill fs-3 me-2"></i> User
+                Registratin
+              </h1>
+              <button
+                type="reset"
+                class="btn-close shadow-none"
+                data-bs-dismiss="modal"
+                aria-label="Close"
+              ></button>
+            </div>
+            <div class="modal-body">
+              <span
+                class="badge rounded-pill text-bg-warning text-dark mb-3 text-wrap lh-base"
+                >Note: Your details must match with your ID (NID, PASSPORT,
+                DRIVING LICENSE, etc) that will be required during
+                check-in.</span
+              >
+              <div class="container-fluid">
+                <div class="row">
+                  <div class="col-md-6 ps-0 mb-3">
+                    <label class="form-label">Name</label>
+                    <input type="text" class="form-control shadow-none" />
+                  </div>
+                  <div class="col-md-6 p-0">
+                    <label class="form-label">Email</label>
+                    <input type="email" class="form-control shadow-none" />
+                  </div>
+                  <div class="col-md-6 ps-0 mb-3">
+                    <label class="form-label">Phone Number</label>
+                    <input type="number" class="form-control shadow-none" />
+                  </div>
+                  <div class="col-md-6 p-0">
+                    <label class="form-label">Picture</label>
+                    <input type="file" class="form-control shadow-none" />
+                  </div>
+                  <div class="col-md-12 p-0 mb-3">
+                    <label class="form-label">Address</label>
+                    <textarea
+                      class="form-control shadow-none"
+                      rows="1"
+                    ></textarea>
+                  </div>
+                  <div class="col-md-6 ps-0 mb-3">
+                    <label class="form-label">Password</label>
+                    <input type="password" class="form-control shadow-none" />
+                  </div>
+                  <div class="col-md-6 p-0">
+                    <label class="form-label">Confirm password</label>
+                    <input type="password" class="form-control shadow-none" />
+                  </div>
+                </div>
+              </div>
+              <div class="d-flex align-items-center justify-content-between">
+                <button type="submit" class="btn btn-dark shadow-none">
+                  Register
+                </button>
+                <a
+                  href="javascript: void(0)"
+                  class="text-secondary text-decoration-none"
+                  >You have an account?</a
+                >
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+    <!-- Modal register end -->
+
+    <!-- custom js -->
+    <script src="assets/script.js"></script>
+    <!-- Bootstrap script -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+      crossorigin="anonymous"
+    ></script>
+    <!-- Swiper js -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+    <!-- Initialize Swiper -->
+    <script>
+      var swiper = new Swiper(".mySwiper", {
+        spaceBetween: 30,
+        effect: "fade",
+        loop: true,
+        autoplay: {
+          delay: 3500,
+          disableOnInteraction: false,
+        },
+      });
+    </script>
+    <!-- Initialize Swiper for team -->
+    <script>
+      var swiper = new Swiper(".team", {
+        spaceBetween: 40,
+        pagination: {
+          el: ".swiper-pagination",
+        },
+        breakpoints: {
+          320: {
+            slidesPerView: 1,
+          },
+          640: {
+            slidesPerView: 1,
+          },
+          768: {
+            slidesPerView: 2,
+          },
+          1024: {
+            slidesPerView: 3,
+          },
+        },
+      });
+    </script>
+    <!-- Initialize Swiper for testimonials -->
+    <script>
+      var swiper = new Swiper(".swiper-testimonials", {
+        effect: "coverflow",
+        grabCursor: true,
+        centeredSlides: true,
+        slidesPerView: "auto",
+        slidesPerView: "3",
+        loop: true,
+        coverflowEffect: {
+          rotate: 50,
+          stretch: 0,
+          depth: 100,
+          modifier: 1,
+          slideShadows: false,
+        },
+        pagination: {
+          el: ".swiper-pagination",
+        },
+        breakpoints: {
+          320: {
+            slidesPerView: 1,
+          },
+          640: {
+            slidesPerView: 1,
+          },
+          768: {
+            slidesPerView: 2,
+          },
+          1024: {
+            slidesPerView: 3,
+          },
+        },
+      });
+    </script>
+    <!-- Initialize Swiper for partners -->
+    <script>
+      var swiper = new Swiper(".partners", {
+        spaceBetween: 10,
+        pagination: {
+          el: ".swiper-pagination",
+        },
+        breakpoints: {
+          320: {
+            slidesPerView: 1,
+          },
+          640: {
+            slidesPerView: 1,
+          },
+          768: {
+            slidesPerView: 2,
+          },
+          1024: {
+            slidesPerView: 3,
+          },
+        },
+      });
+    </script>
+    <!-- Initialize Swiper for blog -->
+    <script>
+      var swiper = new Swiper(".blog", {
+        spaceBetween: 40,
+        pagination: {
+          el: ".swiper-pagination",
+        },
+        breakpoints: {
+          320: {
+            slidesPerView: 1,
+          },
+          640: {
+            slidesPerView: 1,
+          },
+          768: {
+            slidesPerView: 2,
+          },
+          1024: {
+            slidesPerView: 3,
+          },
+        },
+      });
+    </script>
+  </body>
+</html>
